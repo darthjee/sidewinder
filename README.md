@@ -6,3 +6,4 @@ A car consumption app
 [![Test Coverage](https://codeclimate.com/github/darthjee/sidewinder/badges/coverage.svg)](https://codeclimate.com/github/darthjee/sidewinder/coverage)
 [![Issue Count](https://codeclimate.com/github/darthjee/sidewinder/badges/issue_count.svg)](https://codeclimate.com/github/darthjee/sidewinder)
 
+![sidewinder](https://raw.githubusercontent.com/darthjee/sidewinder/master/sidewinder.png)
