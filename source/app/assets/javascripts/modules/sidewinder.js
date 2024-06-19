@@ -3,7 +3,8 @@
     'global',
     'cyberhawk',
     'johto',
-    'home'
+    'home',
+    'login'
   ]);
 
   module.config(['$httpProvider', function($httpProvider) {
