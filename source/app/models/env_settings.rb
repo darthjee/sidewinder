@@ -3,7 +3,7 @@
 class EnvSettings
   extend Sinclair::EnvSettable
 
-  settings_prefix 'STALCHILD'
+  settings_prefix 'SIDEWINDER'
 
   with_settings(
     :password_salt,

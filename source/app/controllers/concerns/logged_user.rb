@@ -4,8 +4,8 @@ module LoggedUser
   extend ActiveSupport::Concern
 
   included do
-    rescue_from Stalchild::Exception::LoginFailed, with: :not_found
-    rescue_from Stalchild::Exception::NotLogged,   with: :not_found
+    rescue_from Sidewinder::Exception::LoginFailed, with: :not_found
+    rescue_from Sidewinder::Exception::NotLogged,   with: :not_found
   end
 
   private
@@ -25,6 +25,6 @@ module LoggedUser
   end
 
   def check_logged!
-    raise Stalchild::Exception::NotLogged unless logged_user
+    raise Sidewinder::Exception::NotLogged unless logged_user
   end
 end

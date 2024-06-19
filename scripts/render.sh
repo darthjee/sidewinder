@@ -1,6 +1,6 @@
 #!/bin/bash
 
-RENDER_SERVICE_NAME="stalchild"
+RENDER_SERVICE_NAME="sidewinder"
 
 function request() {
   METHOD=$1

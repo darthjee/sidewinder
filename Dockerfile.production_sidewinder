@@ -1,4 +1,4 @@
-FROM darthjee/production_stalchild-base:0.0.1 as base
+FROM darthjee/production_sidewinder-base:0.0.1 as base
 
 ####################################
 

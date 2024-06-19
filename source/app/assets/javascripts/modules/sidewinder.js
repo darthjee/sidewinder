@@ -1,5 +1,5 @@
 (function(angular) {
-  var module = angular.module('stalchild', [
+  var module = angular.module('sidewinder', [
     'global',
     'cyberhawk',
     'johto',
