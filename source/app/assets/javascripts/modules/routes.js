@@ -17,6 +17,8 @@
       }
     }, {
       routes: ["/admin/users/new", "/admin/users/:id", "/admin/users", "/admin/users/:id/edit"]
+    }, {
+      routes: ["/forbidden"]
     }];
     provider.$get().bindRoutes();
   }]);
