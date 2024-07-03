@@ -2,7 +2,7 @@
 
 module Admin
   class UsersController < ApplicationController
-    include OnePageApplication
+    include AdminPage
 
     protect_from_forgery except: %i[create update]
 
