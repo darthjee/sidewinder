@@ -35,7 +35,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_07_02_233829) do
     t.string "salt", null: false
     t.datetime "created_at", precision: nil, null: false
     t.datetime "updated_at", precision: nil, null: false
-    t.boolean "admin", default: false
+    t.boolean "admin", default: false, null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["login"], name: "index_users_on_login", unique: true
   end
