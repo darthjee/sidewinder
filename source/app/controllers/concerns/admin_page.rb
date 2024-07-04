@@ -12,10 +12,10 @@ module AdminPage
   private
 
   def redirect_admin
-    "#/forbidden"
+    '#/forbidden'
   end
 
   def forbidden?
-    ! logged_user&.admin
+    !logged_user&.admin
   end
 end

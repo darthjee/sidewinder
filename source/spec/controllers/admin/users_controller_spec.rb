@@ -8,7 +8,7 @@ describe Admin::UsersController do
   end
 
   let(:logged_user) { create(:user, admin: true) }
-  let(:session)     { create(:session, user: logged_user) } 
+  let(:session)     { create(:session, user: logged_user) }
 
   before do
     cookies.signed[:session] = session.id
@@ -189,7 +189,7 @@ describe Admin::UsersController do
 
         let(:user_attributes) do
           user.attributes
-            .except('id', 'created_at', 'updated_at', 'encrypted_password', 'salt', 'admin')
+              .except('id', 'created_at', 'updated_at', 'encrypted_password', 'salt', 'admin')
         end
 
         let(:expected_user_attributes) do
