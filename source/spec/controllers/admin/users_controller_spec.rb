@@ -181,7 +181,8 @@ describe Admin::UsersController do
         let(:user) { User.last }
 
         let(:user_attributes) do
-          user.attributes.except('id', 'created_at', 'updated_at', 'encrypted_password', 'salt')
+          user.attributes
+              .except('id', 'created_at', 'updated_at', 'encrypted_password', 'salt', 'admin')
         end
 
         let(:expected_user_attributes) do

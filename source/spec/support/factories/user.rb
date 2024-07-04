@@ -6,5 +6,6 @@ FactoryBot.define do
     sequence(:login) { |n| "user-#{n}" }
     email            { "#{login}@email.com" }
     password         { 'myPass' }
+    admin            { false }
   end
 end
