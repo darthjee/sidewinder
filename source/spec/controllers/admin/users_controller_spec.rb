@@ -7,12 +7,7 @@ describe Admin::UsersController do
     User::Decorator.new(expected_object).to_json
   end
 
-  let(:logged_user) { create(:user, admin: true) }
-  let(:session)     { create(:session, user: logged_user) }
-
-  before do
-    cookies.signed[:session] = session.id
-  end
+  include_context "with logged user", admin: true
 
   describe 'GET new' do
     render_views
