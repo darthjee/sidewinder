@@ -7,7 +7,7 @@ describe Admin::UsersController do
     User::Decorator.new(expected_object).to_json
   end
 
-  include_context "with logged user", admin: true
+  include_context 'with logged user', admin: true
 
   describe 'GET new' do
     render_views
