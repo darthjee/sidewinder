@@ -9,7 +9,7 @@ module OnePageApplication
 
     layout :layout_for_page
     redirection_rule :render_root, :perform_angular_redirect?
-    skip_redirection_rule :render_root, :ajax?, :home?
+    skip_redirection_rule :render_root, :ajax?, :home?, :forbidden?
   end
 
   private
@@ -36,6 +36,10 @@ module OnePageApplication
 
   def get?
     request.get?
+  end
+
+  def forbidden?
+    false
   end
 
   def layout_for_page
